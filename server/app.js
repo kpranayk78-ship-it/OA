@@ -14,7 +14,7 @@ connectDB();
 // Middleware
 // Replace the URL below with your exact live Vercel URL
 app.use(cors({
-  origin: 'https://oa-cfiu7opy5-pranay9.vercel.app', 
+  origin: 'https://oa-delta.vercel.app', 
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
 }));
