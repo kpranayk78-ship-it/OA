@@ -12,7 +12,12 @@ const app = express();
 connectDB();
 
 // Middleware
-app.use(cors());
+// Replace the URL below with your exact live Vercel URL
+app.use(cors({
+  origin: 'https://oa-delta.vercel.app', 
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
+}));
 app.use(express.json());
 
 // Routes
